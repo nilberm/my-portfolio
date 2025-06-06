@@ -1,6 +1,7 @@
 import SectionTitle from "../ui/SectionTitle";
 import SectionSubtitle from "../ui/SectionSubtitle";
 import TechTag from "../shared/TechTag";
+import { Briefcase } from "lucide-react";
 
 export default function Experience() {
   return (
@@ -22,7 +23,9 @@ export default function Experience() {
           <div className="mb-12 flex md:items-center w-full">
             <div className="hidden md:block w-1/2"></div>
             <div className="md:w-1/2 md:pl-8 relative">
-              <div className="absolute -left-0.5 md:-left-3.5 top-1 w-8 h-8 bg-primary dark:bg-primary-light rounded-full border-4 border-light-bg dark:border-dark-bg"></div>
+              <div className="absolute -left-0.5 md:-left-3.5 top-1 w-8 h-8 bg-primary dark:bg-primary-light rounded-full border-4 border-light-bg dark:border-dark-bg flex items-center justify-center">
+                <Briefcase className="w-4 h-4 text-white" />
+              </div>
               <div className="ml-10 md:ml-0 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-light-border dark:border-dark-border">
                 <h3 className="text-xl font-sora font-semibold mb-1">
                   Frontend Developer
@@ -55,7 +58,9 @@ export default function Experience() {
           {/* Experience Item 2 */}
           <div className="mb-12 flex md:items-center w-full">
             <div className="md:w-1/2 md:pr-8 relative text-right">
-              <div className="absolute -right-0.5 md:-left-3.5 top-1 w-8 h-8 bg-primary dark:bg-primary-light rounded-full border-4 border-light-bg dark:border-dark-bg md:translate-x-[-290%] lg:translate-x-[-360%] xl:translate-x-[-440%]"></div>
+              <div className="absolute -right-0.5 md:-left-3.5 top-1 w-8 h-8 bg-primary dark:bg-primary-light rounded-full border-4 border-light-bg dark:border-dark-bg md:translate-x-[-290%] lg:translate-x-[-360%] xl:translate-x-[-440%] flex items-center justify-center">
+                <Briefcase className="w-4 h-4 text-white" />
+              </div>
               <div className="ml-auto mr-10 md:mr-0 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-light-border dark:border-dark-border text-left">
                 <h3 className="text-xl font-sora font-semibold mb-1">
                   Software Engineer Intern

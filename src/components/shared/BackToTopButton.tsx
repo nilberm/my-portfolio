@@ -11,12 +11,10 @@ export default function BackToTopButton() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!visible) return null;
-
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-5 right-5 p-3 rounded-full bg-primary hover:bg-primary-dark dark:bg-primary-light dark:hover:bg-primary text-white dark:text-dark-bg shadow-lg"
+      className={`fixed bottom-5 right-5 p-3 rounded-full bg-primary hover:bg-primary-dark dark:bg-primary-light dark:hover:bg-primary text-white dark:text-dark-bg shadow-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}
       aria-label="Back to top"
     >
       ⬆️

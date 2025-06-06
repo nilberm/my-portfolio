@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Github, ExternalLink } from "lucide-react";
 
 type ProjectCardProps = {
   title: string;
@@ -55,18 +56,18 @@ export default function ProjectCard({
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${themeColor} hover:underline text-sm font-medium`}
+          className={`${themeColor} hover:underline text-sm font-medium flex items-center`}
         >
-          GitHub
+          <Github className="w-4 h-4 mr-1" /> GitHub
         </a>
         {demo && (
           <a
             href={demo}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${themeColor} hover:underline text-sm font-medium`}
+            className={`${themeColor} hover:underline text-sm font-medium flex items-center`}
           >
-            Live Demo
+            <ExternalLink className="w-4 h-4 mr-1" /> Live Demo
           </a>
         )}
       </div>
