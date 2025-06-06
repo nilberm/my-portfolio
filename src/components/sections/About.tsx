@@ -1,4 +1,5 @@
 import SectionSubtitle from "../ui/SectionSubtitle";
+import { GraduationCap, School } from "lucide-react";
 import SectionTitle from "../ui/SectionTitle";
 
 export default function About() {
@@ -40,7 +41,7 @@ export default function About() {
             </h3>
             <ul className="space-y-6">
               <li className="flex items-start">
-                <div className="mr-3 mt-1">🎓</div>
+                <GraduationCap className="h-6 w-6 text-primary dark:text-primary-light mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold">
                     Brigham Young University - Idaho
@@ -51,7 +52,7 @@ export default function About() {
                 </div>
               </li>
               <li className="flex items-start">
-                <div className="mr-3 mt-1">🏫</div>
+                <School className="h-6 w-6 text-primary dark:text-primary-light mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold">Digital College</h4>
                   <p className="text-sm text-slate-500 dark:text-slate-400">

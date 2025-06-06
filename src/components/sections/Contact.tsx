@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import SectionSubtitle from '../ui/SectionSubtitle';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Contact() {
   const [status, setStatus] = useState('');
@@ -72,16 +73,28 @@ export default function Contact() {
         <div className="text-center mt-10">
           <p className="text-slate-600 dark:text-slate-400 mb-2">Or connect directly:</p>
           <div className="flex justify-center space-x-6">
-            <a href="https://linkedin.com/in/nilbermota" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <span>🔗</span>
+            <a
+              href="https://linkedin.com/in/nilbermota"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary-light transition-colors"
+            >
+              <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://github.com/nilbermota" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <span>💻</span>
+            <a
+              href="https://github.com/nilbermota"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary-light transition-colors"
+            >
+              <Github className="w-6 h-6" />
             </a>
-            <button onClick={copyEmail} className="relative" aria-label="Copy Email">
-              📧
+            <button onClick={copyEmail} className="relative text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary-light transition-colors" aria-label="Copy Email">
+              <Mail className="w-6 h-6" />
               {copied && (
-                <span className="absolute bottom-full mb-2 bg-slate-800 text-white text-xs rounded-md px-2 py-1">
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-slate-800 text-white text-xs rounded-md px-2 py-1">
                   Email Copied!
                 </span>
               )}

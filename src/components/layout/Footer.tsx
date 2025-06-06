@@ -1,3 +1,5 @@
+import { Github, Linkedin } from "lucide-react";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -12,7 +14,7 @@ export default function Footer() {
             aria-label="LinkedIn"
             className="hover:text-primary-light transition-colors"
           >
-            🔗
+            <Linkedin className="w-5 h-5" />
           </a>
           <a
             href="https://github.com/nilbermota"
@@ -21,7 +23,7 @@ export default function Footer() {
             aria-label="GitHub"
             className="hover:text-primary-light transition-colors"
           >
-            💻
+            <Github className="w-5 h-5" />
           </a>
         </div>
         <p className="text-sm">
